@@ -324,6 +324,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &433192944 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d922f2427c23c3f408646692aad249df, type: 3}
+  m_PrefabInstance: {fileID: 1936905583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &433192945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433192944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc7c91b26689a054d88448aba6dfe424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  axis: {x: 0, y: -1, z: 0}
+  space: 1
+  sensitivity: 1
+--- !u!114 &433192946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433192944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use:
+    Filter: 0
+    IgnoreStartedOverGui: 1
+    RequiredFingerCount: 0
+    RequiredMouseButtons: 0
+    RequiredSelectable: {fileID: 0}
+  _camera: {fileID: 0}
+  relative: 0
+  sensitivity: 1
+  damping: -1
+  remainingScale: {x: 0, y: 0, z: 0}
+--- !u!114 &433192947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433192944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852477fe3f288f544a599a0b07ab16f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &501931814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,6 +2192,15 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d922f2427c23c3f408646692aad249df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 433192945}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d922f2427c23c3f408646692aad249df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 433192946}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d922f2427c23c3f408646692aad249df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 433192947}
     - targetCorrespondingSourceObject: {fileID: 666602370706033372, guid: d922f2427c23c3f408646692aad249df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936905591}
