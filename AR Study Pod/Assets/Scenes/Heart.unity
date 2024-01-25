@@ -206,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936905594}
-        m_TargetAssemblyTypeName: Highlight, Assembly-CSharp
-        m_MethodName: ChangeObjectMaterial
+      - m_Target: {fileID: 1936905589}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -696,9 +696,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936905592}
-        m_TargetAssemblyTypeName: Highlight, Assembly-CSharp
-        m_MethodName: ChangeObjectMaterial
+      - m_Target: {fileID: 1936905591}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1129,9 +1129,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936905593}
-        m_TargetAssemblyTypeName: Highlight, Assembly-CSharp
-        m_MethodName: ChangeObjectMaterial
+      - m_Target: {fileID: 1936905588}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1744,9 +1744,9 @@ RectTransform:
   - {fileID: 501931815}
   m_Father: {fileID: 1804094615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -350, y: 106}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630602036
@@ -2058,9 +2058,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1936905595}
-        m_TargetAssemblyTypeName: Highlight, Assembly-CSharp
-        m_MethodName: ChangeObjectMaterial
+      - m_Target: {fileID: 1936905590}
+        m_TargetAssemblyTypeName: MeshToggler, Assembly-CSharp
+        m_MethodName: Toggle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2118,15 +2118,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2134,7 +2134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d922f2427c23c3f408646692aad249df, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2204,27 +2204,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 666602370706033372, guid: d922f2427c23c3f408646692aad249df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936905591}
-    - targetCorrespondingSourceObject: {fileID: 666602370706033372, guid: d922f2427c23c3f408646692aad249df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1936905592}
     - targetCorrespondingSourceObject: {fileID: -914624662024409502, guid: d922f2427c23c3f408646692aad249df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936905590}
-    - targetCorrespondingSourceObject: {fileID: -914624662024409502, guid: d922f2427c23c3f408646692aad249df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1936905595}
     - targetCorrespondingSourceObject: {fileID: -2917118976797415121, guid: d922f2427c23c3f408646692aad249df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936905589}
-    - targetCorrespondingSourceObject: {fileID: -2917118976797415121, guid: d922f2427c23c3f408646692aad249df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1936905594}
     - targetCorrespondingSourceObject: {fileID: 8233882664373150293, guid: d922f2427c23c3f408646692aad249df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1936905588}
-    - targetCorrespondingSourceObject: {fileID: 8233882664373150293, guid: d922f2427c23c3f408646692aad249df, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1936905593}
   m_SourcePrefab: {fileID: 100100000, guid: d922f2427c23c3f408646692aad249df, type: 3}
 --- !u!1 &1936905584 stripped
 GameObject:
@@ -2298,58 +2286,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimalCellObject: {fileID: 1936905587}
---- !u!114 &1936905592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936905587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d8a105959fa5f40855de96fad8070e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToHighlight: {fileID: 1936905587}
---- !u!114 &1936905593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936905584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d8a105959fa5f40855de96fad8070e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToHighlight: {fileID: 1936905584}
---- !u!114 &1936905594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936905585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d8a105959fa5f40855de96fad8070e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToHighlight: {fileID: 1936905585}
---- !u!114 &1936905595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1936905586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0d8a105959fa5f40855de96fad8070e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToHighlight: {fileID: 1936905586}
 --- !u!1 &2009724912
 GameObject:
   m_ObjectHideFlags: 0
