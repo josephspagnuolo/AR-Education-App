@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 5723190339607809482
       m_GuidHigh: 5537074036439184310
     m_SerializedTextureGuid:
-      m_GuidLow: 8220367169202008765
-      m_GuidHigh: 99777755263681640
-    m_Size: {x: 0.13601391, y: 0.192}
+      m_GuidLow: 429110006284241752
+      m_GuidHigh: 1089972289593827275
+    m_Size: {x: 0.215038, y: 0.2794}
     m_SpecifySize: 1
     m_Name: animalcellCOLOR
     m_Texture: {fileID: 0}
