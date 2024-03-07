@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Heart.unity
     guid: 0d725da963b8d0842b1eb05cc2c5c82d
   - enabled: 1
+    path: Assets/Scenes/QuizScene.unity
+    guid: d13921717a7d63d458eb51d05bebabe7
+  - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 15a095e99fb07f746a6c31ffcdf0ea86
   m_configObjects:
