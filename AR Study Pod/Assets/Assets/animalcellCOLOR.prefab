@@ -1268,6 +1268,7 @@ GameObject:
   - component: {fileID: 2403666571638079221}
   - component: {fileID: 5927415589544373175}
   - component: {fileID: -692385611314813573}
+  - component: {fileID: 8602788977171425936}
   m_Layer: 0
   m_Name: animalcellCOLOR
   m_TagString: Untagged
@@ -1348,6 +1349,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToHighlight: {fileID: 0}
+--- !u!114 &8602788977171425936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5938617344445319627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e93f35f6e70b34db477c7be47463c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight: []
+  strength: -1
+  infoUIManager: {fileID: 0}
 --- !u!1 &6489983492950661625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,6 +2283,10 @@ PrefabInstance:
     - target: {fileID: 2909892177943757418, guid: a0fdbb4f424404f46bedc0e839420ccf, type: 3}
       propertyPath: m_Name
       value: Golgi Apparatus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4424396828587804706, guid: a0fdbb4f424404f46bedc0e839420ccf, type: 3}
+      propertyPath: m_Name
+      value: Cytoplasm
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

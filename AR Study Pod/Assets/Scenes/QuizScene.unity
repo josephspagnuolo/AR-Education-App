@@ -202,6 +202,20 @@ MonoBehaviour:
     - Vacuoles
     - Cytoplasm
     CorrectAnswer: 3
+  - Question: What organelle is responsible for producing energy in the form of ATP?
+    Answers:
+    - Mitochondria
+    - Nucleus
+    - Vacuoles
+    - Cytoplasm
+    CorrectAnswer: 1
+  - Question: What is the function of the Golgi apparatus?
+    Answers:
+    - Protein synthesis
+    - Outer cell protection
+    - Digestion of cellular waste
+    - Modifying, sorting, and packaging of proteins
+    CorrectAnswer: 4
   options:
   - {fileID: 2037264261}
   - {fileID: 1523323008}
