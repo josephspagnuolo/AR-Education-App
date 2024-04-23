@@ -8,7 +8,7 @@ public class SmoothHighlight : MonoBehaviour
 {
     public List<GameObject> objectsToHighlight;
     private Renderer[] objectRenderers;
-    private Color[] originalColours;
+    private Color[][] originalColours;
     //private Color highlightColour = new Color(1f, 0.86f, 0f); // Bright yellow
     private Color highlightColour = new Color(219, 255, 0f);
     public float strength = -1f;
@@ -21,7 +21,8 @@ public class SmoothHighlight : MonoBehaviour
     void Start()
     {
         objectRenderers = objectsToHighlight.Select(obj => obj.GetComponent<Renderer>()).ToArray();
-        originalColours = objectRenderers.Select(renderer => renderer.material.color).ToArray();
+        //originalColours = objectRenderers.Select(renderer => renderer.material.color).ToArray();
+	originalColours = objectRenderers.Select(renderer => renderer.sharedMaterials.Select(material => material.color).ToArray()).ToArray();
         infos = FindObjectsOfType<InfoBehavior>().ToList();
     }
 
@@ -79,8 +80,8 @@ public class SmoothHighlight : MonoBehaviour
     void HighlightObject(GameObject obj)
     {
         int index = objectsToHighlight.IndexOf(obj);
-	Color originalColour = originalColours[index];
-        flashingCoroutine = StartCoroutine(FlashHighlight(objectRenderers[index], originalColour));
+	//Color originalColour = originalColours[index];
+        flashingCoroutine = StartCoroutine(FlashHighlight(objectRenderers[index]));
 
 	ObjectInfo objectInfo = obj.GetComponent<ObjectInfo>();
 	if (objectInfo != null)
@@ -91,13 +92,22 @@ public class SmoothHighlight : MonoBehaviour
 	}
     }
 
-    IEnumerator FlashHighlight(Renderer renderer, Color originalColour)
+    IEnumerator FlashHighlight(Renderer renderer)
     {
    	float cycleDuration = 1.75f; // Adjust the speed of the flashing here
 
-    	Color initialColour = renderer.material.color;
+    	//Color initialColour = renderer.material.color;
 
-    	Color colourDifference = highlightColour - initialColour;
+    	//Color colourDifference = highlightColour - initialColour;
+
+	Color[] initialColours = new Color[renderer.materials.Length];
+	Color[] colourDifferences = new Color[renderer.materials.Length];
+
+	for (int i = 0; i < renderer.materials.Length; i++)
+	{
+            initialColours[i] = renderer.materials[i].color;
+            colourDifferences[i] = highlightColour - initialColours[i];
+	}
 
     	float time = 0f;
 
@@ -110,11 +120,17 @@ public class SmoothHighlight : MonoBehaviour
     	{
             float t = Mathf.Sin((2 * Mathf.PI * time / cycleDuration) - (Mathf.PI / 2)) * strength + strength;
 	    
-            Color interpolatedColour = initialColour + colourDifference * t;
+            //Color interpolatedColour = initialColour + colourDifference * t;
     
             //renderer.material.color = interpolatedColour;
+	    //for (int i = 0; i < renderer.materials.Length; i++)
+            //{
+        	//renderer.materials[i].color = interpolatedColour;
+            //}
+
 	    for (int i = 0; i < renderer.materials.Length; i++)
             {
+        	Color interpolatedColour = initialColours[i] + colourDifferences[i] * t;
         	renderer.materials[i].color = interpolatedColour;
             }
 
@@ -135,7 +151,7 @@ public class SmoothHighlight : MonoBehaviour
 	    Renderer renderer = objectRenderers[index];
 	    for (int i = 0; i < renderer.materials.Length; i++)
             {
-        	renderer.materials[i].color = originalColours[index];
+        	renderer.materials[i].color = originalColours[index][i];
             }
         }
     }
@@ -147,7 +163,7 @@ public class SmoothHighlight : MonoBehaviour
 	Renderer renderer = objectRenderers[index];
 	for (int i = 0; i < renderer.materials.Length; i++)
         {
-	    renderer.materials[i].color = originalColours[index];
+	    renderer.materials[i].color = originalColours[index][i];
         }
 	infoUIManager.UpdateInfoText("", "");
     }
