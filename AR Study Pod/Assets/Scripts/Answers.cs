@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
-    public QuizManager quizManager;
+    public Quiz quizManager;
     public Color startColor;
 
     private void Start()
