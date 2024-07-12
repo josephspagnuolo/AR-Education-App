@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 1350171463}
   - component: {fileID: 1350171466}
   m_Layer: 5
-  m_Name: ResultsButton
+  m_Name: QuizzesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: QuizScene
+          m_StringArgument: QuizzesScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1350171464
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 850eacce6a0ea634f95c5081d54c0036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4229eaa59d53b7428c485ee0e8701fe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

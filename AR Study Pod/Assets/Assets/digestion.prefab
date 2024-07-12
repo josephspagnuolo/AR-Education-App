@@ -1,0 +1,1277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &620772088514254964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3561599542007706044}
+  - component: {fileID: 3353456512210992755}
+  - component: {fileID: 8000562294571820169}
+  - component: {fileID: 4848301623034946399}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3561599542007706044
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620772088514254964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5335259146377920108}
+  m_Father: {fileID: 2446694522450151562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &3353456512210992755
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620772088514254964}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &8000562294571820169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620772088514254964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!114 &4848301623034946399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620772088514254964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!1 &902299819372936297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5335259146377920108}
+  - component: {fileID: 4341676473849078890}
+  - component: {fileID: 7947466191909773535}
+  m_Layer: 5
+  m_Name: InfoBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &5335259146377920108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902299819372936297}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1176461261943740421}
+  - {fileID: 1728447235997726419}
+  m_Father: {fileID: 3561599542007706044}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 115}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &4341676473849078890
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902299819372936297}
+  m_CullTransparentMesh: 1
+--- !u!114 &7947466191909773535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902299819372936297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8235295, g: 0.8235295, b: 0.8235295, a: 0.54901963}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1858283987251742838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363244367703046435}
+  - component: {fileID: 4645967691092072190}
+  - component: {fileID: 2477071440448164567}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1363244367703046435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858283987251742838}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2446694522450151562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4645967691092072190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858283987251742838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &2477071440448164567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858283987251742838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!1 &4541439251158752860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1728447235997726419}
+  - component: {fileID: 8528443848733497687}
+  - component: {fileID: 6395922790483694785}
+  m_Layer: 5
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1728447235997726419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541439251158752860}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5335259146377920108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 393, y: 25}
+  m_SizeDelta: {x: -744, y: 75}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &8528443848733497687
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541439251158752860}
+  m_CullTransparentMesh: 1
+--- !u!114 &6395922790483694785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541439251158752860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -368.80032, y: 21.87675, z: -325.5028, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &4547879583065414775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6512067523770038399}
+  - component: {fileID: 5107192103615030951}
+  m_Layer: 0
+  m_Name: InfoUIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6512067523770038399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547879583065414775}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.011782259, y: 0.14599696, z: 0.9608058}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2446694522450151562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5107192103615030951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4547879583065414775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65767dbd359d71b4280b0133574ea440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 5631168220347313752}
+  infoText: {fileID: 6395922790483694785}
+  backgroundImage: {fileID: 7947466191909773535}
+--- !u!1 &6164747839182189270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8941290805295404770}
+  - component: {fileID: 8216277193186001159}
+  m_Layer: 0
+  m_Name: SmoothHighlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8941290805295404770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164747839182189270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0548252, y: 0.106572315, z: 0.81944823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2446694522450151562}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8216277193186001159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164747839182189270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e93f35f6e70b34db477c7be47463c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToHighlight:
+  - {fileID: 5265530807494773685}
+  - {fileID: 8641947155700617409}
+  - {fileID: 1738234987547994071}
+  - {fileID: 5834929954580979297}
+  - {fileID: 4909188638398499246}
+  - {fileID: 2190098635717818270}
+  - {fileID: 1958571858624622884}
+  - {fileID: 3566141594677245401}
+  - {fileID: 2353528382821370488}
+  - {fileID: 1462304583751284651}
+  strength: 0.002
+  infoUIManager: {fileID: 5107192103615030951}
+--- !u!1 &6346031492941828057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176461261943740421}
+  - component: {fileID: 1152508980572015982}
+  - component: {fileID: 5631168220347313752}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1176461261943740421
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346031492941828057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5335259146377920108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 393, y: 25}
+  m_SizeDelta: {x: -744, y: 75}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &1152508980572015982
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346031492941828057}
+  m_CullTransparentMesh: 1
+--- !u!114 &5631168220347313752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346031492941828057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 19
+  m_fontSizeBase: 19
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -368.80032, y: 0, z: -325.5028, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7154497416673419069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2446694522450151562}
+  m_Layer: 0
+  m_Name: digestion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2446694522450151562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7154497416673419069}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3544825120531159945}
+  - {fileID: 3561599542007706044}
+  - {fileID: 1363244367703046435}
+  - {fileID: 8941290805295404770}
+  - {fileID: 6512067523770038399}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3943753419358567522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2446694522450151562}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.60876137
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.79335344
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -255
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7632916032536480230, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Name
+      value: Small-Intestine
+      objectReference: {fileID: 0}
+    - target: {fileID: -5932014270860095564, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1350148448526443495, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96a7535cf5382684d8a4dd01856fdbc4, type: 2}
+    - target: {fileID: -1350148448526443495, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9da53ebeb2b3cd40b732a5288986825, type: 2}
+    - target: {fileID: 117115917790832099, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96a7535cf5382684d8a4dd01856fdbc4, type: 2}
+    - target: {fileID: 529539647698734558, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96a7535cf5382684d8a4dd01856fdbc4, type: 2}
+    - target: {fileID: 919132149155446097, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Name
+      value: Digestion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6788627008752512650, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 78c6bc49f23ca08439778835bf185c0c, type: 2}
+    - target: {fileID: 7368684169390236163, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_Name
+      value: Large-Intestine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654877895602229218, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654877895602229218, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00013
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -24230452667385897, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1090520133496221120}
+    - targetCorrespondingSourceObject: {fileID: -24230452667385897, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5508405927657053855}
+    - targetCorrespondingSourceObject: {fileID: -4515601957944890205, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4137352634892346509}
+    - targetCorrespondingSourceObject: {fileID: -4515601957944890205, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4839970367191661307}
+    - targetCorrespondingSourceObject: {fileID: 3360940233925155765, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3767073582680482815}
+    - targetCorrespondingSourceObject: {fileID: 3360940233925155765, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7594919356191693535}
+    - targetCorrespondingSourceObject: {fileID: 7368684169390236163, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4461190626939267876}
+    - targetCorrespondingSourceObject: {fileID: 7368684169390236163, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9162674925891009748}
+    - targetCorrespondingSourceObject: {fileID: 8258466855068972492, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7037810752328518093}
+    - targetCorrespondingSourceObject: {fileID: 8258466855068972492, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6737582558127148763}
+    - targetCorrespondingSourceObject: {fileID: 2945298957642648572, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1514765723168541994}
+    - targetCorrespondingSourceObject: {fileID: 2945298957642648572, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1703401683842255223}
+    - targetCorrespondingSourceObject: {fileID: 3284593546035514694, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5386251010732688865}
+    - targetCorrespondingSourceObject: {fileID: 3284593546035514694, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4571263936115171644}
+    - targetCorrespondingSourceObject: {fileID: -8663100262570653253, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4201858372668392904}
+    - targetCorrespondingSourceObject: {fileID: -8663100262570653253, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5730862638597586680}
+    - targetCorrespondingSourceObject: {fileID: -7632916032536480230, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1395978751888591905}
+    - targetCorrespondingSourceObject: {fileID: -7632916032536480230, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6610961144081310419}
+    - targetCorrespondingSourceObject: {fileID: 2517548005174987721, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3984163067334210815}
+    - targetCorrespondingSourceObject: {fileID: 2517548005174987721, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5687234211539327126}
+  m_SourcePrefab: {fileID: 100100000, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!1 &1462304583751284651 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2517548005174987721, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3984163067334210815
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462304583751284651}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3008246292707459220, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &5687234211539327126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462304583751284651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Stomach
+  additionalInfo: Stores and breaks down food using digestive juices and enzymes.
+    It churns food into a semi-liquid form called chyme and gradually releases it
+    into the small intestine for further digestion and absorption. The stomach's
+    muscular walls help mix and grind the food, aiding in its transformation and
+    efficient breakdown.
+--- !u!1 &1738234987547994071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3360940233925155765, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &3767073582680482815
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738234987547994071}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 774580413790935289, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &7594919356191693535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738234987547994071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Gallbladder
+  additionalInfo: Stores and concentrates bile produced by the liver, releasing it
+    into the small intestine to help digest fats and absorb fat-soluble vitamins.
+    This process aids in emulsifying fats, enabling better absorption and digestion
+    within the body. It plays a crucial role in maintaining proper digestive balance
+    and preventing fat malabsorption.
+--- !u!1 &1958571858624622884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3284593546035514694, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &5386251010732688865
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958571858624622884}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6799813864800982216, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &4571263936115171644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958571858624622884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Pancreas
+  additionalInfo: Produces digestive enzymes that break down proteins, fats, and
+    carbohydrates in the small intestine. It also secretes insulin and glucagon to
+    regulate blood sugar levels, playing a crucial role in metabolism. It helps maintains
+    the body's energy balance and aids in digestive health.
+--- !u!1 &2190098635717818270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2945298957642648572, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1514765723168541994
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190098635717818270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3205107595041152940, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &1703401683842255223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190098635717818270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Mouth
+  additionalInfo: The entry point of the digestive system where food is chewed and
+    mixed with saliva. Saliva contains enzymes that begin the breakdown of carbohydrates,
+    facilitating swallowing and further digestion. The tongue helps manipulate chewed
+    food into small bits for easy transport down the esophagus and aiding in the
+    sense of taste.
+--- !u!1 &2353528382821370488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7632916032536480230, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1395978751888591905
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353528382821370488}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1873115011862927238, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &6610961144081310419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2353528382821370488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Small Intestine
+  additionalInfo: The primary site of digestion and nutrient absorption. It consists
+    of the duodenum, jejunum, and ileum, each responsible for different stages of
+    processing food and absorbing nutrients. It breaks down food particles further
+    using digestive enzymes and bile, allowing the body to absorb nutrients efficiently.
+--- !u!4 &3544825120531159945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3566141594677245401 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8663100262570653253, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4201858372668392904
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566141594677245401}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2095475452655440390, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &5730862638597586680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566141594677245401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Rectum
+  additionalInfo: The final section of the large intestine, where stool is stored
+    before elimination. It plays a key role in controlling bowel movements and signaling
+    the need to defecate, aiding in regulating the timing and process of waste expulsion.
+    The rectum's function is vital for maintaining proper bowel control and healthy
+    elimination patterns.
+--- !u!1 &4909188638398499246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8258466855068972492, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &7037810752328518093
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4909188638398499246}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6360384865556782114, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &6737582558127148763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4909188638398499246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Liver
+  additionalInfo: A large organ that performs various vital functions such as detoxifying
+    the blood, producing bile for fat digestion, and regulating blood sugar levels.
+    It stores vitamins and minerals, synthesizes essential proteins, and plays a
+    key role in metabolizing fats, carbohydrates, and other nutrients for energy
+    production and overall health.
+--- !u!1 &5265530807494773685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -24230452667385897, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1090520133496221120
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265530807494773685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6854247959288453765, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &5508405927657053855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5265530807494773685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Anus
+  additionalInfo: The endpoint of the digestive tract, where waste is expelled from
+    the body. It consists of sphincter muscles that control the release of feces,
+    allowing for controlled and regulated elimination. The internal and external
+    sphincters work in tandem to maintain continence and manage the passage of waste.
+--- !u!1 &5834929954580979297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7368684169390236163, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4461190626939267876
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834929954580979297}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8861551992962445753, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &9162674925891009748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834929954580979297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Large Intestine
+  additionalInfo: Absorbs water and salts from indigestible food matter, forming
+    solid waste. It houses beneficial bacteria that aid in breaking down waste and
+    synthesizing certain vitamins, while also playing a role in immune function and
+    gut health. Also known as the colon, it ends with the rectum and anus, through
+    which waste is eliminated.
+--- !u!1 &8641947155700617409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4515601957944890205, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+  m_PrefabInstance: {fileID: 3943753419358567522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4137352634892346509
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641947155700617409}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5431268588672265625, guid: 359de654704c7694399a1eed2b68edbf, type: 3}
+--- !u!114 &4839970367191661307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641947155700617409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf54736a482158458f025c5e528f23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partName: Esophagus
+  additionalInfo: A muscular tube that transports food from the mouth to the stomach.
+    It uses rhythmic contractions known as peristalsis to move the food down, aiding
+    the initial stages of digestion. The esophageal lining also secretes mucus to
+    lubricate the passage and facilitate smooth movement of food.

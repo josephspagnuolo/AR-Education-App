@@ -15,46 +15,30 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     int totalQuestions = 0;
     public int score;
-    //public Color startColor;
 
-    //public GameObject questionTxtObj;
-    //private Text QuestionTxt;
     public TextMeshProUGUI QuestionTxt;
 
     private void Start()
-    {
-      
-        //startColor = GetComponent<Image>().color;
-        
+    {        
         totalQuestions = QnA.Count;
         GOPanel.SetActive(false);
-        //QuestionTxt = questionTxtObj.GetComponent<Text>();
         generateQuestions();
-
     }
-    /*
-    public void correct()
-    {
-        QnA.RemoveAt(currentQuestion);
-        generateQuestions();
-        
-    }
-    */
+    
     public void retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     public void GameOver()
     {
         QuizPanel.SetActive(false);
         GOPanel.SetActive(true);
         ScoreText.text = score + "/" + totalQuestions;
-        
     }
 
     public void wrong()
     {
-        
         QnA.RemoveAt(currentQuestion);
         StartCoroutine(waitForNext());
     }
@@ -64,6 +48,7 @@ public class QuizManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         generateQuestions();
     }
+
     public void correct()
     {
         // Check if the list contains elements before attempting to remove
@@ -79,6 +64,7 @@ public class QuizManager : MonoBehaviour
             // Optionally handle this situation (e.g., end the quiz or display a message)
         }
     }
+
     void SetAnswer()
     {
         for (int i = 0; i < options.Length; i++)
@@ -86,7 +72,6 @@ public class QuizManager : MonoBehaviour
             // Assuming that the Text component is directly on the option GameObject
             options[i].GetComponent<Image>().color = options[i].GetComponent<Answers>().startColor;
             TextMeshProUGUI optionText = options[i].GetComponentInChildren<TextMeshProUGUI>();
-            
 
             if (optionText != null)
             {
@@ -101,33 +86,6 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    /*
-    void SetAnswer()
-    {
-        for (int i = 0; i < options.Length; i++)
-        {
-            options[i].GetComponent<Answers>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
-
-            if (QnA[currentQuestion].CorrectAnswer == i + 1)
-            {
-                options[i].GetComponent<Answers>().isCorrect = true;
-            }
-
-        }
-    }
-    */
-    /*
-    void generateQuestions()
-    {
-        currentQuestion = Random.Range(0, QnA.Count);
-
-        QuestionTxt.text = QnA[currentQuestion].Question;
-        SetAnswer();
-
-        
-    }
-    */
     void generateQuestions()
     {
         if (QnA.Count > 0)
@@ -150,7 +108,5 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Out of Questions");
             GameOver();
         }
-        
     }
-
 }
