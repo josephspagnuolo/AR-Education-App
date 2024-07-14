@@ -6,7 +6,6 @@ public class TermsAndConditions : MonoBehaviour
 {
     public GameObject termsPopup;
     public Button acceptButton;
-    public Button declineButton;
 
     void Start()
     {
@@ -15,17 +14,9 @@ public class TermsAndConditions : MonoBehaviour
 
         // Add listeners to buttons
         acceptButton.onClick.AddListener(AcceptTerms);
-        declineButton.onClick.AddListener(DeclineTerms);
     }
 
-/*    void ShowTermsPopup()
-    {
-        Debug.Log("ShowTermsPopup called");
-        termsPopup.SetActive(true);
-        Debug.Log("termsPopup isActive: " + termsPopup.activeSelf);
-    }
-*/
-    void AcceptTerms()
+    public void AcceptTerms()
     {
         Debug.Log("AcceptTerms called");
         //SceneManager.LoadScene("OpeningScene");
@@ -36,12 +27,4 @@ public class TermsAndConditions : MonoBehaviour
 
     }
 
-    void DeclineTerms()
-    {
-        Debug.Log("DeclineTerms called");
-        termsPopup.SetActive(false);
-        Debug.Log("termsPopup isActive after SetActive(false): " + termsPopup.activeSelf);
-        // Optionally, show a message or close the app
-        Application.Quit();
-    }
 }
