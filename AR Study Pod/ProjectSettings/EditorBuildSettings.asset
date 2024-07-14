@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ExploreScene.unity
     guid: f9d13e89490b9b14fa803e8f1fa03e15
   - enabled: 1
+    path: Assets/Scenes/QuizzesScene.unity
+    guid: 3860f3ef0deed9643b1d482c4bdd013a
+  - enabled: 1
     path: Assets/Scenes/Settings.unity
     guid: 15a095e99fb07f746a6c31ffcdf0ea86
-  - enabled: 1
-    path: Assets/Scenes/QuizScene.unity
-    guid: d13921717a7d63d458eb51d05bebabe7
   - enabled: 1
     path: Assets/Scenes/AROptionsScene.unity
     guid: b7fab2d4f31ae4942b9274c7b4e54afa
@@ -38,6 +38,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BrainFree.unity
     guid: bb76948817282244ab4738c9acd871cc
+  - enabled: 1
+    path: Assets/Scenes/Digestion.unity
+    guid: 48a9572024dfd984c804e59235feb9a3
+  - enabled: 1
+    path: Assets/Scenes/DigestionFree.unity
+    guid: 708e080c79934d94bbddf295b08797bb
+  - enabled: 1
+    path: Assets/Scenes/CellQuizScene.unity
+    guid: d13921717a7d63d458eb51d05bebabe7
+  - enabled: 1
+    path: Assets/Scenes/HeartQuizScene.unity
+    guid: 0652f0f1234a48c49990c7acf445b2bf
+  - enabled: 1
+    path: Assets/Scenes/BrainQuizScene.unity
+    guid: a731389767217f24d9b0d1c3f0e66643
+  - enabled: 1
+    path: Assets/Scenes/DigestionQuizScene.unity
+    guid: 2261b404e975f7145b51bc0c2f6be21c
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: b2d9dbd2459d57441a9dc7199a5d4b2d, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 50794dfcf2fa7d84588f90bc3f42b5b7, type: 2}

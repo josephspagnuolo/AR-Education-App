@@ -3,7 +3,57 @@ guid: 02d9f8ac527276a4cb58005c7f7a7bcb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.001
+    second: {fileID: 2100000, guid: 655ec15df6347e848b3d2fa3fbb49248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.002
+    second: {fileID: 2100000, guid: 68c82f947acac7c418106daeb817fb60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.003
+    second: {fileID: 2100000, guid: 96cb618c9157e4341bf78fe1b2cc1f00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.004
+    second: {fileID: 2100000, guid: e7c1c10621587ae4481e49a2ecf78d98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.005
+    second: {fileID: 2100000, guid: 2b4f92b008c063843be55744f9dc2975, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.006
+    second: {fileID: 2100000, guid: dcf4744f0eb7acc49be67dfeb8d407e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.007
+    second: {fileID: 2100000, guid: 1cd7ebaca7596d6459c11772e7b2f466, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.008
+    second: {fileID: 2100000, guid: ef6c827a4a82e474da673ff7de3af5c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.009
+    second: {fileID: 2100000, guid: 68c82f947acac7c418106daeb817fb60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0.010
+    second: {fileID: 2100000, guid: e7c1c10621587ae4481e49a2ecf78d98, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
