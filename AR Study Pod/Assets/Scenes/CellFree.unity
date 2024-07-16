@@ -2393,7 +2393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a0fdbb4f424404f46bedc0e839420ccf, type: 3}
       propertyPath: m_Name
-      value: animalcellCOLOR
+      value: Cell
       objectReference: {fileID: 0}
     - target: {fileID: 2909892177943757418, guid: a0fdbb4f424404f46bedc0e839420ccf, type: 3}
       propertyPath: m_Name

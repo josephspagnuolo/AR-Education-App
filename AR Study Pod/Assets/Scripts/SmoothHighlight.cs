@@ -9,21 +9,17 @@ public class SmoothHighlight : MonoBehaviour
     public List<GameObject> objectsToHighlight;
     private Renderer[] objectRenderers;
     private Color[][] originalColours;
-    //private Color highlightColour = new Color(1f, 0.86f, 0f); // Bright yellow
     private Color highlightColour = new Color(219, 255, 0f);
     public float strength = -1f;
     private GameObject currentHighlightedObject = null;
     private Coroutine flashingCoroutine;
 
-    List<InfoBehavior> infos;
     public InfoUIManager infoUIManager;
 
     void Start()
     {
         objectRenderers = objectsToHighlight.Select(obj => obj.GetComponent<Renderer>()).ToArray();
-        //originalColours = objectRenderers.Select(renderer => renderer.material.color).ToArray();
 	originalColours = objectRenderers.Select(renderer => renderer.sharedMaterials.Select(material => material.color).ToArray()).ToArray();
-        infos = FindObjectsOfType<InfoBehavior>().ToList();
     }
 
     void Update()
@@ -34,12 +30,10 @@ public class SmoothHighlight : MonoBehaviour
             {
                 RaycastHit hit;
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
                 if (Input.touchCount > 0)
                 {
                     ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
                 }
-
                 if (Physics.Raycast(ray, out hit))
                 {
                     GameObject hitObject = hit.collider.gameObject;
@@ -51,7 +45,6 @@ public class SmoothHighlight : MonoBehaviour
                             UnhighlightObject(currentHighlightedObject);
 			    currentHighlightedObject = hitObject;
                             HighlightObject(currentHighlightedObject);
-                            ToggleInfo(currentHighlightedObject.GetComponent<InfoBehavior>());
                         }
 			else if (currentHighlightedObject != null && currentHighlightedObject == hitObject)
 			{
@@ -63,7 +56,6 @@ public class SmoothHighlight : MonoBehaviour
 			{
 			    currentHighlightedObject = hitObject;
                             HighlightObject(currentHighlightedObject);
-                            ToggleInfo(currentHighlightedObject.GetComponent<InfoBehavior>());
 			}
                     }
                 }
@@ -80,9 +72,7 @@ public class SmoothHighlight : MonoBehaviour
     void HighlightObject(GameObject obj)
     {
         int index = objectsToHighlight.IndexOf(obj);
-	//Color originalColour = originalColours[index];
         flashingCoroutine = StartCoroutine(FlashHighlight(objectRenderers[index]));
-
 	ObjectInfo objectInfo = obj.GetComponent<ObjectInfo>();
 	if (objectInfo != null)
 	{
@@ -94,52 +84,31 @@ public class SmoothHighlight : MonoBehaviour
 
     IEnumerator FlashHighlight(Renderer renderer)
     {
-   	float cycleDuration = 1.75f; // Adjust the speed of the flashing here
-
-    	//Color initialColour = renderer.material.color;
-
-    	//Color colourDifference = highlightColour - initialColour;
-
+   	float cycleDuration = 1.75f;
 	Color[] initialColours = new Color[renderer.materials.Length];
 	Color[] colourDifferences = new Color[renderer.materials.Length];
-
 	for (int i = 0; i < renderer.materials.Length; i++)
 	{
             initialColours[i] = renderer.materials[i].color;
             colourDifferences[i] = highlightColour - initialColours[i];
 	}
-
     	float time = 0f;
-
 	if (strength < 0)
 	{
 	    strength = 0.002f;
 	}
-
     	while (true)
     	{
             float t = Mathf.Sin((2 * Mathf.PI * time / cycleDuration) - (Mathf.PI / 2)) * strength + strength;
-	    
-            //Color interpolatedColour = initialColour + colourDifference * t;
-    
-            //renderer.material.color = interpolatedColour;
-	    //for (int i = 0; i < renderer.materials.Length; i++)
-            //{
-        	//renderer.materials[i].color = interpolatedColour;
-            //}
-
 	    for (int i = 0; i < renderer.materials.Length; i++)
             {
         	Color interpolatedColour = initialColours[i] + colourDifferences[i] * t;
         	renderer.materials[i].color = interpolatedColour;
             }
-
             time += Time.deltaTime;
-
             yield return null;
   	}
     }
-
 
     void StopFlashing(GameObject obj)
     {
@@ -147,7 +116,6 @@ public class SmoothHighlight : MonoBehaviour
         {
             StopCoroutine(flashingCoroutine);
             int index = objectsToHighlight.IndexOf(obj);
-            //objectRenderers[index].material.color = originalColours[index];
 	    Renderer renderer = objectRenderers[index];
 	    for (int i = 0; i < renderer.materials.Length; i++)
             {
@@ -159,28 +127,12 @@ public class SmoothHighlight : MonoBehaviour
     void UnhighlightObject(GameObject obj)
     {
         int index = objectsToHighlight.IndexOf(obj);
-        //objectRenderers[index].material.color = originalColours[index];
 	Renderer renderer = objectRenderers[index];
 	for (int i = 0; i < renderer.materials.Length; i++)
         {
 	    renderer.materials[i].color = originalColours[index][i];
         }
 	infoUIManager.UpdateInfoText("", "");
-    }
-
-    void ToggleInfo(InfoBehavior infoBehavior)
-    {
-        foreach (var info in infos)
-        {
-            if (info == infoBehavior)
-            {
-                info.openInfo();
-            }
-            else
-            {
-                info.closeInfo();
-            }
-        }
     }
 
     bool IsPointerOverUIObject()

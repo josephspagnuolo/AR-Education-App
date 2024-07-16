@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Cell.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/CellRandomHighlight.unity
-    guid: 947d4dbc2ff5a4646a99dcc4da90e4dd
+    path: Assets/Scenes/CellFree.unity
+    guid: 5c85796194ed87a458ae4b976dc954db
   - enabled: 1
     path: Assets/Scenes/Heart.unity
     guid: d848a040d10409b45b33c2431aa021cb
