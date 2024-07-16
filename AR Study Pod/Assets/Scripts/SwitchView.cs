@@ -11,7 +11,8 @@ public class SwitchView : MonoBehaviour
     public Button Button2;
     public Button Button3;
     private int activeView = 1;
-    public string hexColor = "#9FBAA7";
+    private string hexColor = "#556B2F";
+    private string darkColor = "#2C2C2C";
     private List<Vector3[]> viewPositions = new List<Vector3[]>();
     private List<Quaternion[]> viewRotations = new List<Quaternion[]>();
 
@@ -45,7 +46,6 @@ public class SwitchView : MonoBehaviour
             Quaternion.Euler(-90, 0, 0),
             Quaternion.Euler(-90, 0, 0)
 	});
-
         viewPositions.Add(new Vector3[] {
             new Vector3(0.14f, 1.56f, -0.156f),
             new Vector3(0.346f, 1.56f, -0.157f),
@@ -74,7 +74,6 @@ public class SwitchView : MonoBehaviour
             Quaternion.Euler(-90, 0, 0),
             Quaternion.Euler(-90, 0, 0)
 	});
-
         viewPositions.Add(new Vector3[] {
             new Vector3(-0.15f, 1.77f, -0.175f),
             new Vector3(0.15f, 1.77f, -0.157f),
@@ -103,7 +102,6 @@ public class SwitchView : MonoBehaviour
             Quaternion.Euler(-90, 0, 0),
             Quaternion.Euler(-90, 0, 0)
 	});
-
         SetChildTransforms();
     }
 
@@ -114,21 +112,21 @@ public class SwitchView : MonoBehaviour
         {
             SetChildTransforms();
             Button1.image.color = ColorUtility.TryParseHtmlString(hexColor, out Color color) ? color : Color.green;
-            Button2.image.color = Color.white;
-            Button3.image.color = Color.white;
+            Button2.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color unColor) ? unColor : Color.black;
+            Button3.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color reColor) ? reColor : Color.black;
         }
         else if (activeView == 2)
         {
             SetChildTransforms();
-            Button1.image.color = Color.white;
+            Button1.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color unColor) ? unColor : Color.black;
             Button2.image.color = ColorUtility.TryParseHtmlString(hexColor, out Color color) ? color : Color.green;
-            Button3.image.color = Color.white;
+            Button3.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color reColor) ? reColor : Color.black;
         }
         else
         {
             SetChildTransforms();
-            Button1.image.color = Color.white;
-            Button2.image.color = Color.white;
+            Button1.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color unColor) ? unColor : Color.black;
+            Button2.image.color = ColorUtility.TryParseHtmlString(darkColor, out Color reColor) ? reColor : Color.black;
             Button3.image.color = ColorUtility.TryParseHtmlString(hexColor, out Color color) ? color : Color.green;
         }
     }
@@ -137,12 +135,10 @@ public class SwitchView : MonoBehaviour
     {
         Vector3[] positions = viewPositions[activeView - 1];
         Quaternion[] rotations = viewRotations[activeView - 1];
-
         int childCount = Mathf.Min(BrainObject.transform.childCount, positions.Length);
         for (int i = 0; i < childCount; i++)
         {
 	    Transform child = BrainObject.transform.GetChild(i);
-	    
             if (activeView != 3)
             {
 		if (child.name.Contains("m_R"))
@@ -163,7 +159,6 @@ public class SwitchView : MonoBehaviour
             {
                 child.gameObject.SetActive(true);
             }
-
             if (i < positions.Length)
             {
                 child.localPosition = positions[i];

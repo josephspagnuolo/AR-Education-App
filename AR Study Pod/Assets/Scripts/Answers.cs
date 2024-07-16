@@ -13,19 +13,17 @@ public class Answers : MonoBehaviour
     {
         startColor = GetComponent<Image>().color;
     }
+
     public void Answer()
     {
         if (isCorrect)
         {
             GetComponent<Image>().color = Color.green;
-            Debug.Log("Correct Answer");
             quizManager.correct();
-            
         }
         else
         {
             GetComponent<Image>().color = Color.red;
-            Debug.Log("Incorrect Answer");
             quizManager.wrong();
         }
     }
