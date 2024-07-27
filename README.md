@@ -1,5 +1,7 @@
 # AR-Education-App
 
+<img src="https://github.com/josephspagnuolo/sproutcircle/blob/main/public/sar.gif" width=720>
+
 ### Built by Sprout Circle
 
 Welcome to Sprout Anatomy AR! It's time for more interactive, engaging and effective learning with the power of augmented reality.
